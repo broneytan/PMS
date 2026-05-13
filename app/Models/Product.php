@@ -10,6 +10,7 @@ class Product extends Model
     //connect to products table
     protected $table = 'products';
 
+    //Mass assignment protection
     protected $fillable = [
         'name',
         'description',
@@ -17,4 +18,6 @@ class Product extends Model
         'price',
         'photo',
     ];
+    
+    
 }
