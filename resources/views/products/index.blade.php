@@ -37,6 +37,6 @@
         </div> <br>
         @endforeach
         <!-- Jg reab tinney jea lomdab ber brer bootstrap use pagination(don't forget to add paginate(3) from get() in controller) -->
-        
+        {{ $products->links('pagination::bootstrap-5') }}
     </div>
 </x-layout>

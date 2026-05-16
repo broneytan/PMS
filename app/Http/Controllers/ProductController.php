@@ -10,8 +10,8 @@ class ProductController extends Controller
 {
     public function index()
     {
-        // $products = Product::orderBy('id', 'desc')->paginate(6);
-        $products = Product::orderBy('id', 'desc')->get();
+        $products = Product::orderBy('id', 'desc')->paginate(6);
+        // $products = Product::orderBy('id', 'desc')->get();
         return view('products.index', compact('products'));
     }
     public function create(){
